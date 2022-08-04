@@ -87,7 +87,7 @@ const Forms = () => {
        }else if(validator.isEmpty(userData.gender && userData.track && userData.birthdate)){
         setError("You do not select gender, track or date");
     }else if(userData.checkbox===false){
-        setError("You must agrree with our condition");
+        setError("You must agrree with terms and conditions");
        }else{
         setError("");
         console.log(userData)
@@ -199,7 +199,7 @@ const Forms = () => {
              <Checkbox name={'checkbox'} 
              iconColor='twitter' 
              value={userData.checkbox}
-             onChange={handleChange}><Text fontSize={'15px'}>I agree with the privacy and policy of techathon community</Text></Checkbox>
+             onChange={handleChange}><Text fontSize={'15px'}>I agree with the terms and conditons of techathon community</Text></Checkbox>
          </FormControl>
          <Text color="red.300">{errors.errorcheckbox}</Text> 
          {errorcheck && <Alert status="error">
