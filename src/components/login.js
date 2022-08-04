@@ -31,7 +31,7 @@ console.log(userData.password)
         } else if(!validator.equals(user, userData.username) || !validator.equals(password,userData.password)){
             setError("in correct usernme or password")   
         }else{
-            navigate('/dashboard')
+            navigate('/dashboard',{replace:true})
         }
     }
     return ( 
